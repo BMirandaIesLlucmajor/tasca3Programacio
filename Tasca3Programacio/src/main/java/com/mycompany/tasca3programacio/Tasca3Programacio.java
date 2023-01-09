@@ -15,9 +15,7 @@ public class Tasca3Programacio {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final double PREU_KG_POMES = 2.35;
-        final double PREU_KG_PERES = 1.95;
-        
+       
         System.out.println("Introdueix els quilos de pomes del primer trimestre:");
         int kgPomesPrimerTrimestre = sc.nextInt();
         
@@ -27,8 +25,11 @@ public class Tasca3Programacio {
         System.out.println("Introdueix els quilos de pomes del tercer trimestre:");
         int kgPomesTercerTrimestre = sc.nextInt();
         
+        System.out.println("Introdueix el preu del quilo de pomes:");
+        double preuKgPomes = sc.nextDouble();
+        
         int totalKgPomes = kgPomesPrimerTrimestre + kgPomesSegonTrimestre + kgPomesTercerTrimestre;
-        double totalIngresosPomes = totalKgPomes * PREU_KG_POMES;
+        double totalIngresosPomes = totalKgPomes * preuKgPomes;
         
         System.out.println("Introdueix els quilos de peres del primer trimestre:");
         int kgPeresPrimerTrimestre = sc.nextInt();
@@ -40,9 +41,14 @@ public class Tasca3Programacio {
         int kgPeresTercerTrimestre = sc.nextInt();
         
         int totalKgPeres = kgPeresPrimerTrimestre + kgPeresSegonTrimestre + kgPeresTercerTrimestre;
-        double totalIngresosPeres = totalKgPeres * PREU_KG_PERES;
+        
+        System.out.println("Introdueix el preu del quilo de peres");
+        double preuKgPeres = sc.nextDouble();
+        double totalIngresosPeres = totalKgPeres * preuKgPeres;
         
         double totalIngresos = totalIngresosPomes + totalIngresosPeres;
         System.out.println("El total d'ingresos de pomes i peres és: " + totalIngresos);
+        
+        
     }
 }

@@ -49,6 +49,12 @@ public class Tasca3Programacio {
         double totalIngresos = totalIngresosPomes + totalIngresosPeres;
         System.out.println("El total d'ingresos de pomes i peres és: " + totalIngresos);
         
+        System.out.println("Introdueix la longitud en cm del radi:");
+        double radi = sc.nextDouble();
+        
+        double area = Math.PI*Math.pow(radi, 2);
+        
+        System.out.println("L'àrea del cercle de radi:" + radi + " és: " + area);
         
     }
 }

@@ -68,7 +68,7 @@ public class Tasca3Programacio {
         int hores = segonsIntroduits / 3600;
         int minuts = (segonsIntroduits % 3600) / 60;
         int segons = (segonsIntroduits % 3600) % 60;
-        
+        //Aquí tenim la sortida representada en hores, minuts i segons
         System.out.println("Hores: " + hores + ". \n" + ". Minuts: " + minuts + ". \n" + "Segons: " + segons + ".");
 
     }

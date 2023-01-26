@@ -53,9 +53,9 @@ public class Tasca3Programacio {
         //Programa 2: Dissenyar una aplicació que calculi la longitud i l’àrea d’una circumferència. Per fer-ho, l’usuari ha d’introduir la longitud del radi.
         System.out.println("Introdueix la longitud en cm del radi:");
         double radi = sc.nextDouble();
-        
+        //Area de la circumferència
         double area = Math.PI*Math.pow(radi, 2);
-                
+        //Longitud de la circumferència       
         double longitud = 2*Math.PI*radi;
         
         System.out.println("L'àrea del cercle de radi: " + radi + " és: " + area + ". I la seva longitud és: " + longitud);
@@ -70,6 +70,7 @@ public class Tasca3Programacio {
         int segons = (segonsIntroduits % 3600) % 60;
         //Aquí tenim la sortida representada en hores, minuts i segons
         System.out.println("Hores: " + hores + ". \n" + ". Minuts: " + minuts + ". \n" + "Segons: " + segons + ".");
+                
 
     }
 }
